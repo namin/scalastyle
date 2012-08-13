@@ -209,6 +209,16 @@
     </profile>
   </profiles>
 
+  <distributionManagement>
+    <snapshotRepository>
+      <uniqueVersion>true</uniqueVersion>
+      <id>gh-pages</id>
+      <name>namin.github.com/maven-repository</name>
+      <url>file:///${basedir}/../maven-repository/</url>
+      <layout>default</layout>
+    </snapshotRepository>
+  </distributionManagement>
+
   <url>http://www.scalastyle.org</url>
   <organization>
     <name>Scalastyle Organization</name>
