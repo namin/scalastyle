@@ -34,7 +34,7 @@ class RedundantIfChecker extends CombinedChecker {
       t <- localvisit(ast.compilationUnit);
       if matches(t)
    ) yield {
-      PositionError(t.firstToken.offset)
+      PositionError(t.firstToken.startIndex)
     }
 
     it.toList
