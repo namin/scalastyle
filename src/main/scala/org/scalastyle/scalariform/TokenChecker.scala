@@ -39,7 +39,7 @@ class TokenChecker extends CombinedChecker {
       t <- ast.compilationUnit.tokens
       if t.tokenType == VARID && regExp.findFirstIn(t.text) != None
    ) yield {
-      PositionError(t.offset)
+      PositionError(t.startIndex)
     }
 
     it.toList
